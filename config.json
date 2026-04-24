@@ -1,4 +1,92 @@
-{
+[
+  {
+    "name": "Dev Test Server 1",
+    "url": "http://127.0.0.1:8811/server-01",
+    "capacity": 100,
+    "priority": 1,
     "probingIntervalMs": 5000,
-    "probeTimeoutMs": 4500
-}
+    "probeTimeoutMs": 4500,
+    "warningTolerance": 80
+  },
+  {
+    "name": "Dev Test Server 2",
+    "url": "http://127.0.0.1:8811/server-02",
+    "capacity": 160,
+    "priority": 2,
+    "probingIntervalMs": 3000,
+    "probeTimeoutMs": 2500,
+    "warningTolerance": 70
+  },
+  {
+    "name": "Dev Test Server 3",
+    "url": "http://127.0.0.1:8811/server-03",
+    "capacity": 100,
+    "priority": 3,
+    "probingIntervalMs": 5000,
+    "probeTimeoutMs": 4500,
+    "warningTolerance": 50
+  },
+  {
+    "name": "Dev Test Server 4",
+    "url": "http://127.0.0.1:8811/server-04",
+    "capacity": 220,
+    "priority": 1,
+    "probingIntervalMs": 3500,
+    "probeTimeoutMs": 2800,
+    "warningTolerance": 75
+  },
+  {
+    "name": "Dev Test Server 5",
+    "url": "http://127.0.0.1:8811/server-05",
+    "capacity": 260,
+    "priority": 2,
+    "probingIntervalMs": 4000,
+    "probeTimeoutMs": 3000,
+    "warningTolerance": 65
+  },
+  {
+    "name": "Dev Test Server 6",
+    "url": "http://127.0.0.1:8811/server-06",
+    "capacity": 300,
+    "priority": 1,
+    "probingIntervalMs": 4500,
+    "probeTimeoutMs": 3200,
+    "warningTolerance": 80
+  },
+  {
+    "name": "Dev Test Server 7",
+    "url": "http://127.0.0.1:8811/server-07",
+    "capacity": 360,
+    "priority": 1,
+    "probingIntervalMs": 5000,
+    "probeTimeoutMs": 3600,
+    "warningTolerance": 70
+  },
+  {
+    "name": "Dev Test Server 8",
+    "url": "http://127.0.0.1:8811/server-08",
+    "capacity": 420,
+    "priority": 2,
+    "probingIntervalMs": 3200,
+    "probeTimeoutMs": 2400,
+    "warningTolerance": 60
+  },
+  {
+    "name": "Dev Test Server 9",
+    "url": "http://127.0.0.1:8811/server-09",
+    "capacity": 520,
+    "priority": 3,
+    "probingIntervalMs": 4800,
+    "probeTimeoutMs": 3500,
+    "warningTolerance": 75
+  },
+  {
+    "name": "Dev Test Server 10",
+    "url": "http://127.0.0.1:8811/server-10",
+    "capacity": 640,
+    "priority": 1,
+    "probingIntervalMs": 3600,
+    "probeTimeoutMs": 2600,
+    "warningTolerance": 85
+  }
+]

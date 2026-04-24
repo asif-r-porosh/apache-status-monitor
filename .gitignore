@@ -1,3 +1,12 @@
+.env.*
+!.env.example
+dist/
+*.tsbuildinfo
+.vscode/
+.idea/
+
+
+
 # Logs
 logs
 *.log
@@ -72,4 +81,10 @@ typings/
 # Serverless directories
 .serverless
 
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes

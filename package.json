@@ -1,14 +1,8 @@
 {
   "name": "apache-status-monitor",
-  "version": "1.0.1",
-  "description": "apache status monitor - a status page (html) parser with monitor server",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "DEBUG=apache-status-monitor:* ./node_modules/nodemon/bin/nodemon.js app.js -e js,mjs,json,ejs,html,js,css",
-    "start": "pm2 start app.js --watch --name apache-status-monitor -e /var/opt/apache-status-monitor/err.log -o /var/opt/apache-status-monitor/out.log",
-    "stop": "pm2 stop apache-status-monitor"
-  },
+  "version": "2.0.0",
+  "description": "apache status monitor using mod_status",
+  "private": true,
   "keywords": [
     "apache",
     "status",
@@ -17,19 +11,33 @@
     "javascript",
     "js"
   ],
-  "author": "Asif R. Porosh",
-  "license": "ISC",
+  "homepage": "https://github.com/asif-r-porosh/apache-status-monitor#readme",
+  "bugs": {
+    "url": "https://github.com/asif-r-porosh/apache-status-monitor/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/asiftyro/apache-status-monitor.git"
+    "url": "git+https://github.com/asif-r-porosh/apache-status-monitor.git"
+  },
+  "license": "ISC",
+  "author": "Asif R. Porosh",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "mock-servers": "node mockup_test_servers/mock-apache-status-servers.js",
+    "test": "node --test test/*.test.js",
+    "test:coverage": "c8 --reporter=text --reporter=lcov node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "request-promise": "^4.2.6",
-    "socket.io": "^4.5.4",
-    "underscore": "^1.13.6"
+    "socket.io": "4.8.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "c8": "^10.1.3",
+    "jsdom": "^26.1.0",
+    "socket.io-client": "4.8.1"
   }
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apache Status Monitor</title>
+  <link rel="stylesheet" href="/public/css/style.css">
+  <script src="/public/js/socket.io.min.js"></script>
+  <script src="/public/js/app.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <h1 class="brand">
+        <span>Apache Status Monitor</span>
+        <span id="socketIndicator" class="socket-indicator socket-pending" aria-label="Socket pending">◎</span>
+      </h1>
+    </header>
+
+    <main class="content-card">
+      <div class="table-wrap">
+        <table class="status-table">
+          <thead>
+            <tr>
+              <th>Server</th>
+              <th>Status</th>
+              <th>Priority</th>
+              <th>Capacity</th>
+              <th>Load</th>
+              <th>Tolerance</th>
+              <th>Response</th>
+              <th>Responded At</th>
+              <th>Probed At</th>
+            </tr>
+          </thead>
+          <tbody id="statusTableBody">
+            <tr>
+              <td colspan="9" class="empty-row">Waiting for data...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span class="copyleft">&copy;</span>
+      <span>Asif R. Porosh</span>
+    </footer>
+  </div>
+</body>
+</html>
